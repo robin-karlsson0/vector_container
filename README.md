@@ -9,14 +9,17 @@ Robin Karlsson 28.4.2018
   
   int init_array[] = {0,1,2,3};             // Create an array to initialize a vector.
   
-  Vec<int> b(init_array,4);      		   
+  Vec<int> b(init_array,4);
   
-  Vec<int> c = a + b;                       //Initialize vector by adding two vectors.
+  int elem = b[2];                          // Access element by index
+  b[3] = 6;
   
-  int max_val = b.max();                    //Returns the largest element in the vector.
+  Vec<int> c = a + b;                       // Initialize vector by adding two vectors.
   
-  Vec<int> d = Vec<int>::vec_dist_L1(a,b);  //Return a vector corresponding to the distance between
-                                              vectors 'a' and 'b'.
+  int max_val = b.max();                    // Returns the largest element in the vector.
+  
+  Vec<int> d = Vec<int>::vec_dist_L1(a,b);  // Return a vector corresponding to the distance between
+                                               vectors 'a' and 'b'.
 ```
 
 ### Constructors
